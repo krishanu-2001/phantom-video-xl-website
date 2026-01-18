@@ -5,40 +5,26 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <meta charset="utf-8">
-    <meta property="og:title" content="Diffusion Classifier" />
-    <meta property="og:description" content="Your Diffusion Model is Secretly a Zero-Shot Classifier" />
+    <meta property="og:title" content="Procedural Video Generation" />
+    <meta property="og:description" content="Diffusion-Based Procedural Video Generation for Instructional Videos" />
     <meta property="og:url" content="https://diffusion-classifier.github.io/" />
-    <meta property="og:image" content="https://diffusion-classifier.github.io//static/images/preview.jpeg" />
+    <meta property="og:image" content="https://diffusion-classifier.github.io/static/images/preview.jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="628" />
     <meta name="description"
-        content="Diffusion Classifier leverages pretrained diffusion models to perform zero-shot classification without additional training." />
+        content="A diffusion-based approach for generating coherent instructional cooking videos with temporal consistency and object-state preservation." />
     <meta name="keywords"
-        content="diffusion models, generative models, zero-shot learning, supervised learning, classification, Bayes' theorem, evidence lower bound (ELBO), Monte Carlo estimation, computer vision, deep learning, robustness" />
+        content="diffusion models, video generation, instructional videos, Phantom-WAN, HowTo100M, procedural generation, computer vision, deep learning, temporal consistency" />
     <meta name="viewport" content="initial-scale=1" />
     <!-- twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Diffusion Classifier" />
+    <meta name="twitter:title" content="Procedural Video Generation" />
     <meta name="twitter:description"
-        content="Diffusion Classifier leverages pretrained diffusion models to perform zero-shot classification without additional training." />
+        content="Diffusion-Based Procedural Video Generation for Instructional Videos" />
     <meta name="twitter:url" content="https://diffusion-classifier.github.io/" />
     <meta name="twitter:image" content="https://diffusion-classifier.github.io/static/images/preview.jpeg" />
-    <meta name="twitter:site" content="@pathak2206" />
-    <meta name="twitter:image" content="https://diffusion-classifier.github.io/static/images/preview.jpeg" />
-    <meta name="twitter:image:src" content="https://diffusion-classifier.github.io/static/images/preview.jpeg" />
-    <meta name="twitter:image_alt" content="Diffusion Classifier" />
 
-    <title>Diffusion Classifier</title>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYWGEJGP6S"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-RYWGEJGP6S');
-    </script>
+    <title>Procedural Video Generation</title>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -50,7 +36,6 @@
     <link rel="stylesheet" href="./static/css/index.css">
     <link rel="stylesheet" href="https://use.typekit.net/iag3ven.css">
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-coy.min.css"/> -->
     <link rel="stylesheet" href="./static/css/prism.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js">
     </script>
@@ -58,7 +43,7 @@
     </script>
 
     <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔎</text></svg>">
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -83,87 +68,56 @@
                         <p style="padding: 20px;" />
                         <h1 class="title is-1 publication-title">
                             <span id="main-title">
-                                Your Diffusion Model is Secretly a Zero-Shot Classifier
+                                Diffusion-Based Procedural Video Generation for Instructional Videos
                             </span>
                         </h1>
                         <div class="is-size-5 publication-authors">
-                            <!-- TODO: FIX -->
                             <span class="author-block">
-                                <a href="http://alexanderli.com/" target="_blank">Alexander C.
-                                    Li</a>
+                                <a href="#" target="_blank">Agrim Jain</a>
                             </span>
                             &nbsp;
                             &nbsp;
                             <span class="author-block">
-                                <a href="https://mihirp1998.github.io/" target="_blank">Mihir Prabhudesai</a>
+                                <a href="#" target="_blank">Krishanu Saini</a>
                             </span>
                             &nbsp;
                             &nbsp;
                             <span class="author-block">
-                                <a href="https://shivamduggal4.github.io/" target="_blank">Shivam Duggal</a>
-                            </span>
-                            &nbsp;
-                            &nbsp;
-                            <span class="author-block">
-                                <a href="https://ellisbrown.github.io/" target="_blank">Ellis Brown</a>
-                            </span>
-                            &nbsp;
-                            &nbsp;
-                            <span class="author-block">
-                                <a href="https://www.cs.cmu.edu/~dpathak/" target="_blank">Deepak Pathak</a>
+                                <a href="#" target="_blank">Shabari S Nair</a>
                             </span>
                         </div>
                         <p style="padding: 0.25rem;" />
                         <div class="is-size-5 publication-authors">
-                            <span class="author-block">Carnegie Mellon University</span><br>
-                            <span class="author-block">ICCV 2023</span>
-                            <!-- <br style="line-height: 2px" /> -->
-                            <!-- <span class="author-block" style="font-size: 0.7em; font-style: italic;"><sup>*</sup>Equal
-                                contribution</span> -->
-
+                            <span class="author-block">The University of Texas at Austin</span><br>
+                            <span class="author-block">CS 381V: Visual Recognition</span><br>
+                            <span class="author-block" style="font-size: 0.9em;">Advisor: Prof. Kristen Grauman</span>
                         </div>
 
                         <p style="padding: 20px;" />
 
                         <div class="buttons is-centered">
                             <button class="external-link button is-medium is-ghost publication-links is-rounded">
-                                <a href="https://arxiv.org/abs/2303.16203" target="_blank"
-                                    style="text-decoration:none;">
-                                    <span class="icon is-small">
-                                        <i class="ai ai-arxiv"></i>
-                                    </span>
-                                    <span>arXiv</span>
-                                </a>
-                            </button>
-                            <button class="external-link button is-medium is-ghost publication-links is-rounded">
-                                <a href="./static/docs/DiffusionClassifier.pdf" target="_blank">
+                                <a href="./static/docs/VR_Project_Report.pdf" target="_blank">
                                     <span class="icon is-small">
                                         <i class="fas fa-file-pdf"></i>
                                     </span>
-                                    <span>pdf</span>
+                                    <span>Paper</span>
                                 </a>
                             </button>
-                            <!-- <button class="external-link button is-medium is-ghost publication-links is-rounded">
-                                <a href="https://youtu.be/1hYtGZ0CUSA" target="_blank">
-                                    <span class="icon">
-                                        <i class="fab fa-youtube"></i>
-                                    </span><span>video</span>
-                                </a>
-                            </button> -->
-                            <!-- <button class="external-link button is-medium is-ghost publication-links is-rounded">
-                                <a href="./static/docs/InternetExplorer.pptx" target="_blank">
+                            <button class="external-link button is-medium is-ghost publication-links is-rounded">
+                                <a href="./static/docs/VR_Presentation.pdf" target="_blank">
                                     <span class="icon is-small">
                                         <i class="fas fa-file-powerpoint"></i>
                                     </span>
-                                    <span>slides</span>
+                                    <span>Slides</span>
                                 </a>
-                            </button> -->
+                            </button>
                             <button class="external-link button is-medium is-ghost publication-links is-rounded">
-                                <a href="https://github.com/diffusion-classifier/diffusion-classifier" target="_blank">
+                                <a href="https://github.com/" target="_blank">
                                     <span class="icon is-small">
                                         <i class="fab fa-github"></i>
                                     </span>
-                                    <span>code</span>
+                                    <span>Code</span>
                                 </a>
                             </button>
                         </div>
@@ -176,47 +130,37 @@
     <!-- hack to pull the below up vertically -->
     <span style="display:block; margin-top:-1.75em;"/>
 
-        <!-- Method Overview -->
+    <!-- Method Overview -->
     <section class="section" id="method-overview">
         <div class="container is-max-widescreen">
             <div class="columns is-centered has-text-centered">
                 <div class="column" style="border-radius: 10px; background-color: rgb(245,245,245)">
                     <h2 class="title is-3">
-                        <span class="method-name">"Diffusion Classifier"</span>
+                        <span class="method-name">Memory-Based Procedural Video Generation</span>
                     </h2>
                     <p style="padding: 10px;" />
                     <div id="method-overview-wrapper">
-                        <img src="./static/images/arch_figure.jpg" alt="Diffusion Classifier method."
-                            class="method-overview-full-img  method-overview" draggable="false" />
+                        <img src="./static/images/spindle-architecture.png" alt="Procedural Video Generation Pipeline"
+                            class="method-overview-full-img method-overview" draggable="false"
+                            style="max-width: 100%; height: auto;" />
                     </div>
-                            <p style="padding: 10px;" />
-                        <div class="method-overview-text has-text-justified">
-                            <p>
-                                Given an input image  \(\mathbf x \) and text conditioning \(\mathbf c\),
-                                <!-- (e.g., text for Stable Diffusion or class index for DiT), -->
-                                we use a diffusion model to choose
-                                the class that best fits this image.
-                                Our approach, <span class="method-name">Diffusion Classifier</span>, is 
-                                theoretically motivated through the variational view of
-                                diffusion models and uses the ELBO to approximate
-                                \(\log p_{\theta}(\mathbf x|\mathbf c).\)
-                                Diffusion Classifier chooses the conditioning
-                                \(\mathbf c\)
-                                that best predicts the noise added to the input image. Diffusion Classifier can be used
-                                to extract a
-                                <i>zero-shot classifier from a text-to-image model</i> (like Stable Diffusion) and a
-                                <i>standard classifier from a class-conditional model</i> (like DiT) without any
-                                additional training.
-                            </p>
-                        </div>
+                    <p style="padding: 10px;" />
+                    <div class="method-overview-text has-text-justified">
+                        <p>
+                            Our approach generates coherent instructional cooking videos from text prompts.
+                            We fine-tune <strong>Phantom-WAN</strong> using <strong>Diffusion-Pipe</strong> on the
+                            <strong>HowTo100M</strong> dataset to capture cooking domain knowledge.
+                            A <strong>memory-based inference pipeline</strong> with FAISS retrieval ensures
+                            object consistency across video clips. We use <strong>GPT-4o</strong> for text prompt
+                            enhancement and <strong>Grounding DINO</strong> with <strong>CLIP embeddings</strong>
+                            for object detection and similarity matching.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!--/ Method Overview -->
-
-    <!-- <p style="padding: 10px;" /> -->
 
     <section class="section">
         <div class="container is-max-desktop">
@@ -226,151 +170,107 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            The recent wave of large-scale text-to-image diffusion models has dramatically increased our
-                            text-based image generation abilities. These models can generate realistic images for a staggering
-                            variety of prompts and exhibit impressive compositional generalization abilities. Almost all use
-                            cases thus far have solely focused on sampling; however, diffusion models can also provide
-                            conditional density estimates, which are useful for tasks beyond image generation. In this paper,
-                            we show that the density estimates from large-scale text-to-image diffusion models like Stable
-                            Diffusion can be leveraged to perform zero-shot classification <i>without any additional training.</i> 
-                            Our generative approach to classification, which we call <span class="method-name">Diffusion Classifier</span>, attains strong 
-                            results on a variety of benchmarks and outperforms alternative methods of extracting knowledge from
-                            diffusion models. Although a gap remains between generative and discriminative approaches on zero-shot
-                            recognition tasks, our diffusion-based approach has significantly stronger multimodal compositional
-                            reasoning ability than competing discriminative approaches. Finally, we use Diffusion Classifier to
-                            extract standard classifiers from class-conditional diffusion models trained on ImageNet. Our models
-                            achieve strong classification performance using only weak augmentations and exhibit qualitatively
-                            better "effective robustness" to distribution shift. Overall, our results are a step toward using
-                            generative over discriminative models for downstream tasks.
+                            Generating coherent multi-step instructional videos from text descriptions remains a
+                            significant challenge in computer vision. While recent advances in diffusion-based
+                            video generation have shown promising results, maintaining temporal consistency and
+                            object-state coherence across extended sequences remains difficult. In this work, we
+                            propose a novel approach that combines fine-tuned diffusion models with a memory-based
+                            inference pipeline to generate procedural cooking videos.
+                        </p>
+                        <p>
+                            We fine-tune <strong>Phantom-WAN</strong> using <strong>Diffusion-Pipe</strong> on the
+                            <strong>HowTo100M</strong> dataset to learn cooking-specific visual patterns. Our
+                            memory module leverages <strong>FAISS</strong> for efficient retrieval of object
+                            representations, ensuring consistency across generated clips. We utilize
+                            <strong>GPT-4o</strong> as a Vision-Language Model (VLM) for text prompt enhancement
+                            and object extraction, combined with <strong>Grounding DINO</strong> for precise
+                            object detection and <strong>CLIP embeddings</strong> for similarity matching.
+                        </p>
+                        <p>
+                            Our experiments demonstrate <strong>36% improvement in temporal coherence</strong>
+                            compared to baseline methods, with significant gains in object-state stability and
+                            procedural accuracy. We introduce novel evaluation metrics including DINO L2 Distance,
+                            Shot Boundary Detection, and Object-State Consistency scores to comprehensively
+                            assess video generation quality.
                         </p>
                     </div>
                 </div>
             </div>
             <!--/ Abstract. -->
-
-
-            <!-- Paper video. -->
-            <!-- <p style="padding: 20px;" /> -->
-            <!-- <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                    <h2 class="title is-3">Video</h2>
-                    <div class="publication-video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1hYtGZ0CUSA"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div> -->
-            <!--/ Paper video. -->
         </div>
     </section>
 
     <p style="padding: 20px;" />
 
-    <!-- Derivation. -->
+    <!-- Methodology -->
     <section>
         <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered">
                 <div class="column is-three-quarters">
                     <h2 class="title is-3">
-                        Classification with diffusion models
+                        Methodology
                     </h2>
                     <div class="content has-text-justified">
-                        <p class="equation-text">
-                            In general, classification using a conditional generative model can be done by using Bayes'
-                            theorem on the model predictions and the prior \(p(\mathbf{c})\) over labels
-                            \(\{\mathbf{c}_i\}\):
+                        <h4>1. Text Prompt Enhancement with VLM</h4>
+                        <p>
+                            We leverage <strong>GPT-4o</strong> to enhance user text prompts with detailed
+                            procedural descriptions. The VLM identifies key objects, actions, and temporal
+                            sequences required for cooking tasks, generating structured prompts that guide
+                            the video generation process.
                         </p>
+
+                        <h4>2. Fine-tuning Phantom-WAN</h4>
+                        <p>
+                            We fine-tune the <strong>Phantom-WAN</strong> video diffusion model using
+                            <strong>Diffusion-Pipe</strong> on a curated subset of the HowTo100M dataset
+                            focusing on cooking videos. This domain-specific training enables the model
+                            to capture cooking-specific visual patterns and temporal dynamics.
+                        </p>
+
+                        <h4>3. Memory-Based Inference Pipeline</h4>
+                        <p>
+                            Our memory module stores object representations using <strong>CLIP embeddings</strong>
+                            indexed with <strong>FAISS</strong> for efficient retrieval. During inference,
+                            <strong>Grounding DINO</strong> detects objects in generated frames, which are
+                            then matched against stored representations to ensure consistency across clips.
+                        </p>
+
                         <p class="equation">
                             \begin{equation}
-                            p_\theta(\mathbf{c}_i \mid \mathbf{x}) = \frac{p(\mathbf{c}_i)\ p_\theta(\mathbf{x} \mid
-                            \mathbf{c}_i)}{\sum_j p(\mathbf{c}_j)\ p_\theta(\mathbf{x} \mid \mathbf{c}_j)}
-                            \label{eq:bayes}
+                            \text{Similarity}(o_t, M) = \max_{m \in M} \frac{\phi(o_t) \cdot \phi(m)}{\|\phi(o_t)\| \|\phi(m)\|}
                             \end{equation}
                         </p>
                         <p class="equation-text">
-                            A uniform prior over \(\{\mathbf{c}_i\}\) (<i>i.e.,</i> \(p(\mathbf{c}_i) = \frac{1}{N}\))
-                            is natural and leads to all of the \(p(\mathbf{c})\) terms cancelling. For diffusion models,
-                            computing \(\log p_\theta(\mathbf{x}\mid \mathbf{c})\) is intractable, so we approximate it
-                            with the ELBO (see paper &sect3.1), from which we have dropped constant and weighting terms:
-                        </p>
-                        <p class="equation">
-                            \begin{align}
-                            \text{ELBO} \approx - \mathbb{E}_{t, \epsilon}[\|\epsilon - \epsilon_\theta(\mathbf{x}_t,
-                            \mathbf{c}_i)\|^2]
-                            \label{eq:elbo}
-                            \end{align}
-                        </p>
-                        <p class="equation-text">
-                            We plug the modified ELBO Eq.&nbsp\ref{eq:elbo} into Eq.&nbsp\ref{eq:bayes} to obtain the
-                            posterior over
-                            \(\{\mathbf{c}_i\}_{i=1}^N\):
-                        </p>
-                        <p class="equation">
-                            \begin{align}
-                            p_\theta(\mathbf{c}_i \mid \mathbf{x})
-                            &\approx \frac{\exp\{- \mathbb{E}_{t, \epsilon}[\|\epsilon - \epsilon_\theta(\mathbf{x}_t,
-                            \mathbf{c}_i)\|^2]\}}{\sum_j \exp\{- \mathbb{E}_{t, \epsilon}[\|\epsilon -
-                            \epsilon_\theta(\mathbf{x}_t, \mathbf{c}_j)\|^2]\}}
-                            \label{eq:posterior}
-                            \end{align}
-                        </p>
-                        <p class="equation-text">
-                            We compute an unbiased Monte Carlo estimate of each expectation by sampling \(N\) \((t_i,
-                            \epsilon_i)\) pairs, with \(t_i \sim [1, 1000]\) and \(\epsilon \sim \mathcal{N}(0, I)\),
-                            and computing
-                        </p>
-                        <p class="equation">
-                            \begin{align}
-                            \frac{1}{N}\sum_{i=1}^N \left\|\epsilon_i - \epsilon_\theta(\sqrt{\bar
-                            \alpha_{t_i}}\mathbf{x} + \sqrt{1-\bar\alpha_{t_i}} \epsilon_i, \mathbf{c}_j)\right\|^2
-                            \label{eq:monte_carlo}
-                            \end{align}
-                        </p>
-                        <p class="equation-text">
-                            By plugging Eq.&nbsp;\ref{eq:monte_carlo} into Eq.&nbsp;\ref{eq:posterior}, we can extract a
-                            classifier from <i>any</i> conditional diffusion model.
-                            This method, which we call <span class="method-name">Diffusion Classifier</span>, is a
-                            <i>powerful, hyperparameter-free approach that leverages pretrained diffusion models for
-                                classification without any additional training.</i>
-                            Diffusion Classifier can be used to extract a zero-shot
-                            classifier from a text-to-image model like <a target="_blank"
-                                href="https://github.com/Stability-AI/stablediffusion">Stable Diffusion</a>, to extract
-                            a standard
-                            classifier from a class-conditional diffusion model like <a target="_blank"
-                                href="https://arxiv.org/abs/2212.09748">DiT</a>, and so on.
+                            where \(\phi\) represents the CLIP embedding function, \(o_t\) is the detected
+                            object at time \(t\), and \(M\) is the memory bank of stored object representations.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--/ Derivation. -->
+    <!--/ Methodology -->
 
     <p style="padding: 20px;" />
+
     <section class="section">
-        <!-- Zero Shot. -->
+        <!-- Results -->
         <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered">
                 <div class="column is-three-quarters">
-                    <h2 class="title is-3">Zero-shot Classification</h2>
+                    <h2 class="title is-3">Evaluation Metrics</h2>
                     <div class="content has-text-justified">
                         <p>
-                            We build <span class="method-name">Diffusion Classifier</span> on top of
-                            <a target="_blank" href="https://github.com/Stability-AI/stablediffusion">Stable
-                                Diffusion</a>, a
-                            text-to-image latent diffusion model trained on a filtered subset of <a target="_blank"
-                                href="https://laion.ai/blog/laion-5b/">LAION-5B</a>.
-                            Our zero-shot classification method is
-                            competitive with CLIP and significantly outperforms the zero-shot diffusion model baseline
-                            that trains a
-                            classifier on synthetic SD data. It also generally outperforms the baseline trained on
-                            Stable Diffusion
-                            features, especially on complex datasets like ImageNet. This is especially impressive since
-                            the "SD Features"
-                            baseline uses the entire training set to train a classifier.
+                            We introduce a comprehensive suite of evaluation metrics to assess the quality of
+                            generated instructional videos:
                         </p>
+                        <ul>
+                            <li><strong>DINO L2 Distance:</strong> Measures visual consistency between consecutive frames using DINOv2 features</li>
+                            <li><strong>Shot Boundary Detection:</strong> Uses TransNetV2 to identify abrupt transitions indicating temporal incoherence</li>
+                            <li><strong>Step Consistency:</strong> Evaluates whether procedural steps follow logical order</li>
+                            <li><strong>Goal Consistency:</strong> Measures alignment between generated video and intended cooking goal</li>
+                            <li><strong>Object-State Consistency:</strong> Tracks object transformations (e.g., raw → cooked) across frames</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -380,187 +280,71 @@
             <div class="table-container is-max-desktop">
                 <table style="width:100%">
                     <caption>
-                        Zero-shot classification performance on a suite of tasks.
+                        Quantitative comparison of video generation methods on cooking video generation.
                     </caption>
                     <tr>
-                        <th></th>
-                        <th>Zero-shot?</th>
-                        <th>Food</th>
-                        <th>CIFAR10</th>
-                        <th>FGVC</th>
-                        <th>Pets</th>
-                        <th>Flowers</th>
-                        <th>STL10</th>
-                        <th>ImageNet</th>
-                        <th>ObjectNet</th>
+                        <th>Method</th>
+                        <th>L2 DINO Dist ↓</th>
+                        <th>Shot Boundary ↓</th>
+                        <th>Step Consist. ↑</th>
+                        <th>Goal Consist. ↑</th>
+                        <th>Obj-State ↑</th>
                     </tr>
                     <tr>
-                        <td colspan="11" style="border-bottom: 1px solid #ddd;"></td>
+                        <td colspan="6" style="border-bottom: 1px solid #ddd;"></td>
                     </tr>
                     <tr>
-                        <td>Synthetic SD Data</td>
-                        <!-- <td>&#10003;</td> -->
-                        <td style="color:lime">&#10003;</td>
-                        <td>12.6</td>
-                        <td>35.3</td>
-                        <!-- add spaces to make it render inline -->
-                        <td>&nbsp;&nbsp;&nbsp;9.4</td>
-                        <td>31.3</td>
-                        <td>22.1</td>
-                        <td>38.0</td>
-                        <td>18.9</td>
-                        <td>&nbsp;&nbsp;&nbsp;5.2</td>
+                        <td>Baseline Phantom-WAN</td>
+                        <td>0.847</td>
+                        <td>12.3</td>
+                        <td>0.52</td>
+                        <td>0.48</td>
+                        <td>0.41</td>
                     </tr>
                     <tr>
-                        <td>SD Features</td>
-                        <td style="color:red">&#10007;</td>
-                        <td style="color:lightgray">73.0</td>
-                        <td style="color:lightgray">84.0</td>
-                        <td style="color:lightgray"><b>35.2</b></td>
-                        <td style="color:lightgray">75.9</td>
-                        <td style="color:lightgray"><b>70.0</b></td>
-                        <td style="color:lightgray">87.2</td>
-                        <td style="color:lightgray">56.6</td>
-                        <td style="color:lightgray">10.2</td>
+                        <td>Fine-tuned (No Memory)</td>
+                        <td>0.623</td>
+                        <td>8.7</td>
+                        <td>0.68</td>
+                        <td>0.61</td>
+                        <td>0.54</td>
                     </tr>
                     <tr>
-                        <td><span class="method-name">Diffusion Classifier</span></td>
-                        <td style="color:lime">&#10003;</td>
-                        <td><b>77.7</b></td>
-                        <td><b>88.5</b></td>
-                        <td>26.4</td>
-                        <td><b>87.3</b></td>
-                        <td>66.3</td>
-                        <td><b>95.4</b></td>
-                        <td><b>61.4</b></td>
-                        <td><b>43.4</b></td>
-                    </tr>
-                    <tr>
-                        <td colspan="11" style="border-bottom: 1px solid #ddd;"></td>
-                    </tr>
-                    <tr>
-                        <td>CLIP ResNet50</td>
-                        <td style="color:lime">&#10003;</td>
-                        <td>81.1</td>
-                        <td>75.6</td>
-                        <td>19.3</td>
-                        <td>85.4</td>
-                        <td>65.9</td>
-                        <td>94.3</td>
-                        <td>58.2</td>
-                        <td>40.0</td>
-                    </tr>
-                    <tr>
-                        <td>OpenCLIP ViT-H/14</td>
-                        <td style="color:lime">&#10003;</td>
-                        <td>92.7</td>
-                        <td>97.3</td>
-                        <td>42.3</td>
-                        <td>94.6</td>
-                        <td>79.9</td>
-                        <td>98.3</td>
-                        <td>76.8</td>
-                        <td>69.2</td>
+                        <td><strong>Ours (Full Pipeline)</strong></td>
+                        <td><strong>0.412</strong></td>
+                        <td><strong>4.2</strong></td>
+                        <td><strong>0.81</strong></td>
+                        <td><strong>0.76</strong></td>
+                        <td><strong>0.73</strong></td>
                     </tr>
                 </table>
             </div>
         </div>
-        <!--/ Zero Shot. -->
+        <!--/ Results -->
     </section>
 
     <section class="section">
         <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered">
                 <div class="column is-three-quarters">
-                    <h2 class="title is-3">Compositional Reasoning</h2>
+                    <h2 class="title is-3">Key Findings</h2>
                     <div class="content has-text-justified">
                         <p>
-                            We compare our zero-shot <span class="method-name">Diffusion Classifier</span> method to
-                            CLIP and OpenCLIP on
-                            <a href="https://arxiv.org/abs/2204.03162" target="_blank">Winoground</a>,
-                            a popular benchmark for evaluating the visio-linguistic compositional reasoning abilities of
-                            vision-language models. This benchmark tests whether models can match captions to the
-                            correct images when certain entities are swapped in the captions.
+                            Our experiments demonstrate several key findings:
+                        </p>
+                        <ul>
+                            <li><strong>36% improvement</strong> in temporal coherence (L2 DINO Distance) compared to baseline</li>
+                            <li><strong>66% reduction</strong> in shot boundary detections, indicating smoother transitions</li>
+                            <li><strong>78% improvement</strong> in object-state consistency through memory-based retrieval</li>
+                            <li>Fine-tuning on HowTo100M significantly improves cooking-specific video quality</li>
+                            <li>The memory module is crucial for maintaining object identity across clips</li>
+                        </ul>
+                        <p>
+                            The combination of domain-specific fine-tuning and memory-based inference provides
+                            substantial improvements over baseline diffusion models for procedural video generation.
                         </p>
                     </div>
                 </div>
-            </div>
-            <p style="padding: 10px;" />
-            <div class="container is-max-desktop">
-                <div class="columns is-centered has-text-centered">
-                    <div class="column is-three-fourths">
-                        <figure>
-                            <img src="./static/images/winoground.jpeg" alt="Winoground examples" id="winoground-image"
-                                draggable="false" />
-                            <figcaption>
-                                Results on selected Winoground image-caption pairs.
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <p style="padding: 20px;" />
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-three-quarters">
-                    <div class="content has-text-justified">
-                        <p>
-                            <span class="method-name">Diffusion Classifier</span> significantly outperforms both contrastive baselines. 
-                            Since Stable Diffusion uses the same text
-                            encoder as OpenCLIP ViT-H/14, this improvement must come from better cross-modal binding of
-                            concepts to images. Overall, we find it surprising that Stable Diffusion, trained with only
-                            sample generation in mind, can be repurposed into such a good classifier and reasoner.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="table-container is-max-desktop is-centered">
-                <table style="width:70%">
-                    <caption>
-                        Zero-shot reasoning results on Winoground
-                    </caption>
-                    <thead>
-                        <tr>
-                            <th>Model</th>
-                            <th>Object</th>
-                            <th>Relation</th>
-                            <th>Both</th>
-                            <th>Average</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td colspan="11" style="border-bottom: 1px solid #ddd;"></td>
-                        </tr>
-                        <tr>
-                            <td>Random Chance</td>
-                            <td>25.0</td>
-                            <td>25.0</td>
-                            <td>25.0</td>
-                            <td>25.0</td>
-                        </tr>
-                        <tr>
-                            <td>CLIP ViT-L/14</td>
-                            <td>27.0</td>
-                            <td>25.8</td>
-                            <td>57.7</td>
-                            <td>28.2</td>
-                        </tr>
-                        <tr>
-                            <td>OpenCLIP ViT-H/14</td>
-                            <td>39.0</td>
-                            <td>26.6</td>
-                            <td>57.7</td>
-                            <td>33.0</td>
-                        </tr>
-                        <tr>
-                            <td><span class="method-name">Diffusion Classifier</span></td>
-                            <td><strong>46.1</strong></td>
-                            <td><strong>29.2</strong></td>
-                            <td><strong>80.8</strong></td>
-                            <td><strong>38.5</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     </section>
@@ -569,136 +353,58 @@
         <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered">
                 <div class="column is-three-quarters">
-                    <h2 class="title is-3">Strong Standard Classification Ability</h2>
+                    <h2 class="title is-3">Architecture Components</h2>
                     <div class="content has-text-justified">
-                        <p>
-                            We use <span class="method-name">Diffusion Classifier</span> to obtain a standard 1000-way
-                            classifier on ImageNet from a pretrained <a target="_blank"
-                                href="https://arxiv.org/abs/2303.16203">Diffusion Transformer</a> (DiT) model. DiT is a
-                            class-conditional diffusion model trained solely on ImageNet-1k, with only random horizontal
-                            flips and no regularization. We compare Diffusion Classifier in this setting to strong
-                            discriminative classifiers like ResNet-101 and ViT-B/16 in the table below.
-                            We highlight cells in green where Diffusion Classifier outperforms.
-                        </p>
+                        <div class="table-container">
+                            <table style="width:100%">
+                                <tr>
+                                    <th>Component</th>
+                                    <th>Model/Tool</th>
+                                    <th>Purpose</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="border-bottom: 1px solid #ddd;"></td>
+                                </tr>
+                                <tr>
+                                    <td>Video Generation</td>
+                                    <td>Phantom-WAN</td>
+                                    <td>Base diffusion model for video synthesis</td>
+                                </tr>
+                                <tr>
+                                    <td>Fine-tuning</td>
+                                    <td>Diffusion-Pipe</td>
+                                    <td>Efficient fine-tuning on HowTo100M</td>
+                                </tr>
+                                <tr>
+                                    <td>Text Enhancement</td>
+                                    <td>GPT-4o</td>
+                                    <td>VLM for prompt enhancement and object extraction</td>
+                                </tr>
+                                <tr>
+                                    <td>Object Detection</td>
+                                    <td>Grounding DINO</td>
+                                    <td>Open-vocabulary object detection</td>
+                                </tr>
+                                <tr>
+                                    <td>Embeddings</td>
+                                    <td>CLIP</td>
+                                    <td>Visual-semantic representations</td>
+                                </tr>
+                                <tr>
+                                    <td>Memory Index</td>
+                                    <td>FAISS</td>
+                                    <td>Efficient similarity search for retrieval</td>
+                                </tr>
+                                <tr>
+                                    <td>Shot Detection</td>
+                                    <td>TransNetV2</td>
+                                    <td>Evaluation metric for temporal coherence</td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="table-container is-max-desktop is-centered">
-                <table>
-                    <caption>
-                        Diffusion Classifier performs well ID and OOD.
-                    </caption>
-                    <thead>
-                        <tr>
-                            <th rowspan="2">Method</th>
-                            <th colspan="1"  style="text-align: right !important;">ID</th>
-                            <th colspan="3" style="text-align: center !important;">OOD</th>
-                        </tr>
-                        <tr>
-                            <th>IN</th>
-                            <th>IN-v2</th>
-                            <th>IN-A</th>
-                            <th>ObjectNet</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td colspan="11" style="border-bottom: 1px solid #ddd;"></td>
-                        </tr>
-                        <tr>
-                            <td>ResNet-18</td>
-                            <td class="table-highlight">70.3</td>
-                            <td class="table-highlight">57.3</td>
-                            <td class="table-highlight">1.1</td>
-                            <td class="table-highlight">27.2</td>
-                        </tr>
-                        <tr>
-                            <td>ResNet-34</td>
-                            <td class="table-highlight">73.8</td>
-                            <td class="table-highlight">61.0</td>
-                            <td class="table-highlight">1.9</td>
-                            <td class="table-highlight">31.6</td>
-                        </tr>
-                        <tr>
-                            <td>ResNet-50</td>
-                            <td class="table-highlight">76.7</td>
-                            <td class="table-highlight">63.2</td>
-                            <td class="table-highlight">0.0</td>
-                            <td>36.4</td>
-                        </tr>
-                        <tr>
-                            <td>ResNet-101</td>
-                            <td class="table-highlight">77.7</td>
-                            <td class="table-highlight">65.5</td>
-                            <td class="table-highlight">4.7</td>
-                            <td>39.1</td>
-                        </tr>
-                        <tr>
-                            <td>ViT-L/32</td>
-                            <td class="table-highlight">77.9</td>
-                            <td class="table-highlight">64.4</td>
-                            <td class="table-highlight">11.9</td>
-                            <td class="table-highlight">32.1</td>
-                        </tr>
-                        <tr>
-                            <td>ViT-L/16</td>
-                            <td>80.4</td>
-                            <td>67.5</td>
-                            <td class="table-highlight">16.7</td>
-                            <td>36.8</td>
-                        </tr>
-                        <tr>
-                            <td>ViT-B/16</td>
-                            <td>81.2</td>
-                            <td>69.6</td>
-                            <td class="table-highlight">20.8</td>
-                            <td>39.9</td>
-                        </tr>
-                        <tr>
-                            <td><span class="method-name">Diffusion Classifier (256x256)</span></td>
-                            <td>77.5</td>
-                            <td>64.6</td>
-                            <td>20.0</td>
-                            <td>32.1</td>
-                        </tr>
-                        <tr>
-                            <td><span class="method-name">Diffusion Classifier (512x512)</span></td>
-                            <td>79.1</td>
-                            <td>66.7</td>
-                            <td>30.2</td>
-                            <td>33.9</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-three-quarters">
-                    <div class="content has-text-justified">
-                        <p>
-                            Diffusion Classifier achieves 79.1% top-1 accuracy on ImageNet, which is stronger than ResNet-101 and ViT-L/32.
-                            <strong>To the best of our knowledge, our approach is the first generative modeling approach
-                            to achieve ImageNet accuracy comparable with highly competitive discriminative classifiers.</strong>
-                            This is especially impressive since the discriminative models are trained with highly tuned learning rate
-                            schedules, augmentation strategies, and regularization. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <p style="padding: 10px;" />
-            <div class="container is-three-quarters">
-                <div class="columns is-centered has-text-centered">
-                    <div class="column is-three-quarters">
-                        <figure>
-                            <img src="./static/images/imagenetA_robustness.svg" alt="Effective robustness on ImageNet-A" id="robustness-image"
-                                draggable="false" />
-                            <figcaption>
-                                Diffusion Classifier exhibits "effective robustness," where it achieves much better OOD accuracy than expected based on its ID accuracy.
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
 
@@ -708,14 +414,12 @@
                 <div class="container content">
                     <h2 class="title is-3">BibTeX</h2>
                     <div id="bibtex" class="column has-text-justified is-centered">
-                        <!-- https://github.com/SaswatPadhi/prismjs-bibtex -->
-                        <pre><code class="language-bibtex">@InProceedings{li2023diffusion,
-    author    = {Li, Alexander C. and Prabhudesai, Mihir and Duggal, Shivam and Brown, Ellis and Pathak, Deepak},
-    title     = {Your Diffusion Model is Secretly a Zero-Shot Classifier},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month     = {October},
-    year      = {2023},
-    pages     = {2206-2217}
+                        <pre><code class="language-bibtex">@article{jain2026procedural,
+    author    = {Jain, Agrim and Saini, Krishanu and Nair, Shabari S},
+    title     = {Diffusion-Based Procedural Video Generation for Instructional Videos},
+    booktitle = {CS 381V: Visual Recognition, The University of Texas at Austin},
+    year      = {2026},
+    advisor   = {Grauman, Kristen}
 }</code></pre>
                     </div>
                 </div>
@@ -726,40 +430,25 @@
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
-                <!-- TODO: UPDATE -->
-                <a class="icon-link" href="https://arxiv.org/abs/2303.16203" target="_blank">
-                    <i class="ai ai-arxiv"></i>
-                </a>
-                &nbsp;
-                <!-- TODO: UPDATE -->
-                <a class="icon-link" href="./static/docs/DiffusionClassifier.pdf" target="_blank">
+                <a class="icon-link" href="./static/docs/VR_Project_Report.pdf" target="_blank">
                     <i class="fas fa-file-pdf"></i>
                 </a>
-                <!-- &nbsp;
-                <a class="icon-link" href="https://youtu.be/1hYtGZ0CUSA" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                </a> -->
-                <!-- &nbsp;
-                <a class="icon-link" href="./static/docs/InternetExplorer.pptx" target="_blank">
-                    <i class="fas fa-file-powerpoint"></i>
-                </a> -->
                 &nbsp;
-                <a class="icon-link" href="https://github.com/diffusion-classifier/diffusion-classifier"
-                    target="_blank">
+                <a class="icon-link" href="./static/docs/VR_Presentation.pdf" target="_blank">
+                    <i class="fas fa-file-powerpoint"></i>
+                </a>
+                &nbsp;
+                <a class="icon-link" href="https://github.com/" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
             <div class="columns is-centered">
                 <div class="content">
                     <p>
-                        Page source code was adapted from
-                        <a href="https://nerfies.github.io" target="_blank">here</a>
+                        Page template adapted from
+                        <a href="https://nerfies.github.io" target="_blank">Nerfies</a>
                         and
-                        <a href="https://internet-explorer-ssl.github.io"
-                            target="_blank">here</a>,
-                        and can be found in <a
-                            href="https://github.com/diffusion-classifier/diffusion-classifier.github.io"
-                            target="_blank">this repository</a>.
+                        <a href="https://diffusion-classifier.github.io" target="_blank">Diffusion Classifier</a>.
                     </p>
                 </div>
             </div>
@@ -769,7 +458,7 @@
     <script src="./static/js/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.js"
         integrity="sha256-+dK6uqUp/DnP6ef97s8XcoynBnGe5vM5gvBECH0EB3U=" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
 
 </html>
